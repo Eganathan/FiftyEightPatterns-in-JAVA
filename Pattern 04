@@ -1,0 +1,56 @@
+public class FiftyEightPatterns {
+
+        /*
+            1 2 3 4 5
+            1 2 3 4
+            1 2 3
+            1 2
+            1
+            1
+            1 2
+            1 2 3
+            1 2 3 4
+            1 2 3 4 5
+         */
+
+    public static void main(String[] args){
+
+        for (int x = 5; x >= 1; x--){
+            for (int y = 1; y<=x;y++){
+                System.out.print(y+ " ");
+            }
+            System.out.println("");
+        }
+
+      for (int x = 1; x <= 5; x++){
+          for (int y = 1; y <= x; y++){
+              System.out.print(y + " ");
+          }
+          System.out.println("");
+      }
+
+    }
+}
+
+/*
+
+x = 5,4,3,2,1,
+
+x5 = y= 12345
+x4 = y= 1234
+x3 = y= 123
+x2 = y =12
+x1 = y =1
+
+2nd loop:
+x = 12345
+
+x1 = y= 1
+x2 = y= 12
+x3 = y= 123
+x4 = y =1234
+x5 = y =12345
+
+
+
+*/
