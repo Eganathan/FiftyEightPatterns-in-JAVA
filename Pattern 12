@@ -1,0 +1,33 @@
+public class Twelve{   
+   
+   //***** START OF PATTERN 12*****//
+
+        /*
+        1
+        2 7
+        3 8 13
+        4 9 14 19
+        5 10 15 20 25
+         */
+    public static void Pattern_Twelve(int input){
+
+        System.out.println(" Printing the Pattern Eleven with "+input +" as an input! ");
+        for (int i = 1; i <= input; i++){
+            int temp = i;
+            for(int j = 1; j <= i; j++ ){
+                System.out.print(temp + " ");
+                temp+=input;
+            }
+            System.out.println("");
+        }
+
+    }//***** END OF PATTERN 12*****//
+    
+    
+    public static void main(String[] args){
+    
+      Pattern_Twelve(5);
+    }
+    
+    
+    }
