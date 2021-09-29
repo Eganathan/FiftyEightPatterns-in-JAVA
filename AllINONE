@@ -190,9 +190,25 @@ public class FiftyEightPatterns {
         System.out.println( " ");
         }
            //***** END OF PATTERN 06*****//
+           
+           
+           
+           
 
 
+        //***** START OF PATTERN 10*****//
+    public static void Pattern_Ten(int input){
 
+        System.out.println(" Printing the Pattern Ten with "+input +" as an input! ");
+        int k = 1;
+        for (int h = 1; h <= input; h++){
+            for (int i = 1; i <= h; i++ ){
+                System.out.print(k+ " ");
+                k++;
+            }
+            System.out.println("");
+        }
+    }//***** END OF PATTERN 10*****//
 
 
 
@@ -208,7 +224,8 @@ public class FiftyEightPatterns {
         //Pattern_Three(5);
         //Pattern_Four(5);
         //Pattern_Five(5);
-        Pattern_Six(5);
+        //Pattern_Six(5);
+        Pattern_Ten(5);
         
     
     }
