@@ -170,7 +170,26 @@ public class FiftyEightPatterns {
             //Getting the pointer to a new line
             System.out.println();
         }
-    }//***** END OF PATTERN 04*****//
+    }//***** END OF PATTERN 05*****//
+    
+    
+    //***** START OF PATTERN 06*****//
+    public static void Pattern_Six(int input){
+
+        System.out.println(" Printing the Pattern Six with "+input +" as an input! ");
+
+        for (int h = 1; h <= input; h++){
+
+            for (int i = 5; i > h; i--){
+                System.out.print( " ");
+                }
+
+            for (int j =1; j <= h; j++){
+            System.out.print(j + " ");}
+
+        System.out.println( " ");
+        }
+           //***** END OF PATTERN 06*****//
 
 
 
@@ -188,6 +207,9 @@ public class FiftyEightPatterns {
         //Pattern_Two(5);
         //Pattern_Three(5);
         //Pattern_Four(5);
-        Pattern_Five(5);
+        //Pattern_Five(5);
+        Pattern_Six(5);
+        
+    
     }
 }
