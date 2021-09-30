@@ -223,10 +223,63 @@ public class FiftyEightPatterns {
             System.out.println("");
         }
     }//***** END OF PATTERN 11*****//
+    
+        //***** START OF PATTERN 12*****//
 
+        /*
+        1
+        2 7
+        3 8 13
+        4 9 14 19
+        5 10 15 20 25
+         */
+    public static void Pattern_Twelve(int input){
 
+        System.out.println(" Printing the Pattern Eleven with "+input +" as an input! ");
+        for (int i = 1; i <= input; i++){
+            int temp = i;
+            for(int j = 1; j <= i; j++ ){
+                System.out.print(temp + " ");
+                temp+=input;
+            }
+            System.out.println("");
+        }
 
+    }//***** END OF PATTERN 12*****//
+    
+    
+    
+    
+   
+   
+    
+        //***** START OF PATTERN 14*****//
 
+    /*
+    1
+    1 2 1
+    1 2 3 2 1
+    1 2 3 4 3 2 1
+    1 2 3 4 5 4 3 2 1
+     */
+    public static void Pattern_Fourteen(int input){
+
+        System.out.println(" Printing the Pattern Fourteen with "+input +" as an input! ");
+        for(int x= 1; x <= input; x++){
+            int temp = 0;
+
+            for(int y=1; y <= x; y++){
+                System.out.print(y+ " ");
+                temp = y;
+            }
+
+            for(int z = temp-1; z >= 1; z--){
+                System.out.print(z+ " ");
+            }
+            System.out.println("");
+        }
+
+    }//***** END OF PATTERN 14*****//
 
 
 
@@ -240,7 +293,9 @@ public class FiftyEightPatterns {
         //Pattern_Five(5);
         //Pattern_Six(5);
         //Pattern_Ten(5);
-        Pattern_Eleven(5);
+        //Pattern_Eleven(5);
+        //Pattern_Twelve(5);
+        //Pattern_Fourteen(5);
         
     
     }
