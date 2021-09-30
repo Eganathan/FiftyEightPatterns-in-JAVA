@@ -1,0 +1,33 @@
+public class FiftyEightPatterns {
+    //***** START OF PATTERN 15*****//
+
+    /*
+    1 2 3 4 5
+     1 2 3 4
+      1 2 3
+       1 2
+        1
+     */
+    public static void Pattern_Fifteen(int input){
+
+        System.out.println(" Printing the Pattern Fifteen with "+input +" as an input! ");
+        for(int a = 1; a <= input; a++){
+            for (int b = 1;b<a; b++){
+                System.out.print( " ");
+            }
+
+            for (int c = 1; c <= input-a+1; c++){
+                System.out.print(c + " ");
+            }
+            System.out.println("");
+        }
+    }//***** END OF PATTERN 15*****//
+    public static void main(String[] args){
+     
+     Pattern_Fifteen(5);
+
+
+
+
+    }
+}
