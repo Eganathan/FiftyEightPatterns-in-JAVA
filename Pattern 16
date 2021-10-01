@@ -1,0 +1,41 @@
+    //***** START OF PATTERN 16*****//
+
+    /*
+        1
+       1 2
+      1 2 3
+     1 2 3 4
+    1 2 3 4 5
+     1 2 3 4
+      1 2 3
+       1 2
+        1
+     */
+    public static void Pattern_Sixteen(int input){
+
+        System.out.println(" Printing the Pattern Sixteen with "+input +" as an input! ");
+
+        //First Part of the loop
+        for(int a =1; a <= input ; a++){
+
+            for (int b=input-a; b >= 1; b--){
+                System.out.print(" ");
+            }
+            for (int c = 1; c <= a; c++){
+                System.out.print(c+ " ");
+            }
+            System.out.println("");
+        }
+
+        //Second Part of the loop
+        for(int a =input-1; a >=1 ; a--){
+
+            for (int b=input-a; b >= 1; b--){
+                System.out.print(" ");
+            }
+            for (int c = 1; c <= a; c++){
+                System.out.print(c+ " ");
+            }
+            System.out.println("");
+        }
+}//***** END OF PATTERN 16*****//
