@@ -1,0 +1,53 @@
+//***** START OF PATTERN 18*****//
+
+
+    public static void Pattern_Eighteen(int input){
+
+    /*
+    1 2 3 4 5
+     2 3 4 5
+      3 4 5
+       4 5
+        5
+        5
+       4 5
+      3 4 5
+     2 3 4 5
+    1 2 3 4 5 */
+    System.out.println(" Printing the Pattern EightTeen with "+input +" as an input! ");
+
+    //First part of Pattern
+        for(int a = 1; a <= input; a++){
+
+            for(int b = 1; b < a; b++){
+                System.out.print(" ");
+            }
+
+            for(int c = a; c <= input; c++){
+                System.out.print(c + " ");
+            }
+            System.out.println(" ");
+        }
+
+
+
+        //Second part of Pattern
+        for(int a = input; a >= 1; a--){
+
+            for(int b = 1; b < a; b++){
+                System.out.print(" ");
+            }
+
+            for(int c = a; c <= input; c++){
+                System.out.print(c + " ");
+            }
+            System.out.println(" ");
+        }
+
+
+
+
+
+
+
+    }//***** END OF PATTERN 18*****//
