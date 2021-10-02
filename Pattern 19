@@ -1,0 +1,23 @@
+//***** START OF PATTERN 19*****//
+    public static void Pattern_Nineteen(int input){
+    /*
+        5
+       4 5
+      3 4 5
+     2 3 4 5
+    1 2 3 4 5 */
+        System.out.println(" Printing the Pattern NineTeen with "+input +" as an input! ");
+
+        //First part of Pattern
+        for(int a =input; a >= 1; a--){
+
+            for(int b = a; b > 1; b--) {
+                System.out.print(" ");
+            }
+
+            for(int c = a; c <= input; c++){
+                System.out.print(c + " ");
+            }
+            System.out.println(" ");
+        }
+    }//***** END OF PATTERN 19*****//
