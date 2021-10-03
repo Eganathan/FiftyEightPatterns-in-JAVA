@@ -1,0 +1,27 @@
+//***** START OF PATTERN 21*****//
+    public static void Pattern_TwentyOne(int input){
+    /*
+        1
+        1 0
+        1 0 1
+        1 0 1 0
+        1 0 1 0 1*/
+        System.out.println(" Printing the Pattern Twenty One with "+input +" as rows or input! ");
+
+
+        for (int a=1; a <= input; a++){
+            int temp = 1;
+            for(int b=1; b <= a; b++){
+                if(temp == 1){
+                    System.out.print(temp + " ");
+                    temp = 0;
+                }else if( temp == 0){
+                    System.out.print(temp + " ");
+                    temp = 1;
+                }
+            }
+
+            System.out.println(" ");
+        }
+
+    }//***** END OF PATTERN 21*****//
