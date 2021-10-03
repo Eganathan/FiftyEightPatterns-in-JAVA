@@ -1,0 +1,24 @@
+    //***** START OF PATTERN 25*****//
+    public static void Pattern_TwentyFive(int input){
+    /*
+            1
+           2 2
+          3 3 3
+         4 4 4 4
+        5 5 5 5 5 */
+        System.out.println(" Printing the Pattern Twenty Five with "+input +" as rows or input! ");
+
+        for(int a= 1; a <= input; a++){
+
+            for(int b=input-a; b >= 1; b--){
+                System.out.print(" ");
+            }
+
+            for(int c=1; c <=a; c++){
+                System.out.print(a+ " ");
+            }
+
+            System.out.println( " ");
+        }
+
+    }//***** END OF PATTERN 25*****//
