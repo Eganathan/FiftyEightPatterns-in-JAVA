@@ -1,0 +1,26 @@
+    //***** START OF PATTERN 24*****//
+    public static void Pattern_TwentyFour(int input){
+    /*
+        1 2 3 4 5 4 3 2 1
+        2 3 4 5 4 3 2
+        3 4 5 4 3
+        4 5 4
+        5 */
+        System.out.println(" Printing the Pattern Twenty Four with "+input +" as rows or input! ");
+
+        int temp =0;
+
+        for(int a = input; a >= 1; a--){
+            temp +=1;
+            //Loop One
+            for(int b =temp; b <= input; b++){
+                System.out.print(b + " ");
+            }
+            //Two
+            for(int c =input-1; c >= temp && c!=0; c--){
+                System.out.print(c + " ");
+            }
+
+            System.out.println(" ");
+        }
+    }//***** END OF PATTERN 24*****//
