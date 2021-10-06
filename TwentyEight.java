@@ -38,4 +38,5 @@ public class TwentyEight extends FiftyEightPatterns{
 
 
     }
-}//***** END OF PATTERN 28*****//
+}
+//***** END OF PATTERN 28*****//
