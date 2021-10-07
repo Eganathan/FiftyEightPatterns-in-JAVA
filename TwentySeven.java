@@ -9,12 +9,12 @@ public class TwentySeven extends FiftyEightPatterns{
         5 9 12 14 15  */
         System.out.println(" Printing the Pattern Twenty Seven with "+input +" as rows or input! ");
 
-            for(int a= 1; a <= input; a++){
-                int temp =1;
 
-                for(int b = a; b >= 1; b--){
-                    System.out.print(b+ " ");
-                    temp +=1;
+            for(int a= 1; a <= input; a++){
+                int temp =a;
+                for(int b = 1; b <= a; b++){
+                    System.out.print(temp+ " ");
+                    temp = temp + input-b;
                 }
 
                 System.out.println( " ");
