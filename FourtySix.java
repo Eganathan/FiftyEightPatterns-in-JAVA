@@ -1,5 +1,5 @@
 public class FourtySix extends FiftyEightPatterns{
-    //***** START OF PATTERN 46*****//
+    //***** START OF PATTERN 47*****//
     public static void Pattern(int input){
     /*
         1
@@ -43,5 +43,5 @@ public class FourtySix extends FiftyEightPatterns{
 
 
     }}
-//***** END OF PATTERN 46*****//
+//***** END OF PATTERN 47*****//
 
