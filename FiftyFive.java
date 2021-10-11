@@ -16,6 +16,9 @@ public class FiftyFive extends FiftyEightPatterns{
         for(int a= 1; a <= input; a++){
 
            //Spacing
+            for(int s= 1; s <= input-a; s++){
+                System.out.print(" ");
+            }
 
             //System.out.print(counter+ " ");
             //counter++;
