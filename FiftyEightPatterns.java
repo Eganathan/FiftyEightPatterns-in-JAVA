@@ -1,32 +1,12 @@
+import java.util.Scanner;
+
+import static java.lang.Thread.sleep;
+
 public class FiftyEightPatterns {
     int input;
 
 
-    //*****PATTERN 01*****//
-    /*
-    1
-    1 2
-    1 2 3
-    1 2 3 4
-    1 2 3 4 5
-    * */
-    public static void Pattern_One(int input){
 
-        System.out.println(" Printing the Pattern One with "+input +" number of rows");
-
-        //for loop which has an int x with the value 1 and will increment and loop through till x <= the input value
-        for (int x = 1; x<= input; x++){
-
-            // Nested loop that runs if y <= x so we get 1 for the first loop and 1,2 when x =2 and 1,2,3 when x = 3 ...
-            for (int y = 1; y <= x; y++){
-                // Prints the value of the y during the nested loop is true along with a space for a better visibility
-                System.out.print(y + " ");
-            }
-            //Getting the pointer to a new line
-            System.out.println();
-        }
-
-    }//***** END OF PATTERN 01*****//
 
 
     //***** START OF PATTERN 02*****//
@@ -618,7 +598,7 @@ public class FiftyEightPatterns {
 
     public static void main(String[] args){
 
-        //Pattern_One(5);
+        //
         //Pattern_Two(5);
         //Pattern_Three(5);
         //Pattern_Four(5);
@@ -641,6 +621,144 @@ public class FiftyEightPatterns {
          //Pattern_TwentyFive(5);
         //Pattern_TwentySix(5);
         //TwentySeven.Pattern_TwentySeven(5);
-        TwentyEight.Pattern_TwentyEight(7);
+        //TwentyEight.Pattern_TwentyEight(7);
+        //TwentyNine.Pattern_TwentyNine(5);
+        //Thirty.Pattern_Thirty(5);
+        //ThirtyOne.Pattern_ThirtyOne(5);
+        //ThirtyTwo.Pattern_ThirtyTwo(5);
+        //ThirtyThree.Pattern_ThirtyThree(5);
+        //ThirtyFour.Pattern(5);
+        //ThirtyFive.Pattern(5);
+        //ThirtySix.Pattern(5);
+        //ThirtySeven.Pattern(5);
+        //ThirtyEight.Pattern(5);
+        //ThirtyNine.Pattern(5);
+        //Fourty.Pattern(5);
+        //FourtyOne.Pattern(5);
+        //FourtyTwo.Pattern(5);
+        //FourtyThree.Pattern(5);
+        //FourtyFour.Pattern(5);
+        //FourtyFive.Pattern(5);
+        //FourtySix.Pattern(5);
+        //FourtySeven.Pattern(5);
+        //FourtyEight.Pattern(5);
+        //FortyNine.Pattern(5);
+        //Fifty.Pattern(5);
+        //FiftyOne.Pattern(5);
+        //FiftyTwo.Pattern(5);
+        //FiftyThree.Pattern(5);
+        //FiftyFour.Pattern(5);
+        //FiftyFive.Pattern(5);
+        //FiftySix.Pattern(5);
+        //FiftySeven.Pattern(5);
+        //FiftyEight.Pattern(5);
+
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Hi, Hope you are doing well!");
+        System.out.println("Whats your name ?");
+        String name = myObj.nextLine();
+        System.out.println( name+"! Which pattern would you link me to print? ");
+        System.out.println("* Must be between 1 - 58 *");
+        int patternNumber = myObj.nextInt();
+        System.out.println(name+"Let me know the prefered number of rows");
+        int rowNumber = myObj.nextInt();
+
+
+        if(patternNumber >=1 && patternNumber <= 58){
+
+            switch (patternNumber){
+                case 1:
+                    One.Pattern(rowNumber);
+                    break;
+                case 2:
+                    Pattern_Two(rowNumber);
+                    break;
+                case 3:
+                    Pattern_Three(rowNumber);
+                    break;
+                case 4:
+                    Pattern_Four(rowNumber);
+                    break;
+                case 5:
+                    Pattern_Five(rowNumber);
+                    break;
+                case 6:
+                    Pattern_Six(rowNumber);
+                    break;
+                case 7:
+                    Pattern_Seven(rowNumber);
+                    break;
+                case 8:
+                    Pattern_Eight(rowNumber);
+                    break;
+                case 9:
+                    Pattern_Nine(rowNumber);
+                    break;
+                case 10:
+                    Pattern_Ten(rowNumber);
+                    break;
+                case 11:
+                    Pattern_Eleven(rowNumber);
+                    break;
+                case 12:
+                    Pattern_Twelve(rowNumber);
+                    break;
+                case 13:
+                    Thirteen.Pattern(rowNumber);
+                    break;
+                case 14:
+                    Pattern_Fourteen(rowNumber);
+                    break;
+                case 16:
+                    Pattern_Sixteen(rowNumber);
+                    break;
+                case 17:
+                    Pattern_Seventeen(rowNumber);
+                    break;
+                case 18:
+                    Pattern_Eighteen(rowNumber);
+                    break;
+                case 19:
+                    Pattern_Nineteen(rowNumber);
+                    break;
+                case 20:
+                    Pattern_Twenty(rowNumber);
+                    break;
+                case 21:
+                    Pattern_TwentyOne(rowNumber);
+                    break;
+                case 22:
+                    Pattern_TwentyTwo(rowNumber);
+                    break;
+                case 23:
+                    Pattern_TwentyThree(rowNumber);
+                    break;
+                case 24:
+                    Pattern_TwentyFour(rowNumber);
+                    break;
+                case 25:
+                    Pattern_TwentyFive(rowNumber);
+                    break;
+                case 26:
+                    Pattern_TwentySix(rowNumber);
+                    break;
+                case 27:
+                    TwentySeven.Pattern(rowNumber);
+                    break;
+                case 27:
+                    TwentySeven.Pattern(rowNumber);
+                    break;
+
+
+            }
+
+
+
+        }else{
+            System.out.println("Please Enter a Pattern between 1-58!");
+        }
+
+
+
     }
 }
