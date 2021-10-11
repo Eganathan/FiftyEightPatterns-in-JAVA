@@ -14,6 +14,11 @@ public class FiftyFour extends FiftyEightPatterns{
         int temp =1;
         int temp2 = 0;
         for(int p = 1; p <= input; p++){
+            
+            for(int s= input-1; s >=p; s--){
+                System.out.print("  ");
+            }
+            
 
             for(int q= p; q >=1; q--){
 
