@@ -1,0 +1,59 @@
+
+public class Patterns {
+	
+	
+	public static void main(String[] args) {
+		
+		//pattern_One(5);
+		pattern_Two(5);
+		
+		
+	}
+	//Pattern ONE
+	static void pattern_One(int input) {
+		System.out.println("** Pattern 01 **");
+		 /*
+		    1
+		    1 2
+		    1 2 3
+		    1 2 3 4
+		    1 2 3 4 5
+	    * */
+		int row = 1; // init b as 1 can consider it for row value
+		
+		//while loop runs while rows less than input
+		while(row <= input){
+			
+			for(int col = 1; col <= row; col++) {
+				System.out.print(col+ " ");
+			}
+			System.out.println(" ");
+			row++;
+		}}
+	
+  //PATTERN TWO
+	static void pattern_Two(int input) {
+		System.out.println("** Pattern 02 **");
+		
+		/* Pattern 02
+	      1 
+	      2 2 
+	      3 3 3 
+	      4 4 4 4 
+	      5 5 5 5 5
+	      6 6 6 6 6 6
+	    
+	    * */
+		int row = 1; // init b as 1 can consider it for row value
+		
+		//while loop runs while rows less than input
+		while(row <= input){
+			
+			for(int col = 1; col <= row; col++) {
+				System.out.print(row+ " ");
+			}
+			System.out.println(" ");
+			row++;
+		}}
+
+}
